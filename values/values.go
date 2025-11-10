@@ -10,7 +10,8 @@ const (
 
 // String liefert den Wert als String.
 func (v Value) String() string {
-	//hint: Verwenden Sie einen switch-case Block um den Wert v in einen String umzuwandeln.
+	// HINWEIS:
+	// Verwenden Sie einen switch-case Block um den Wert v in einen String umzuwandeln.
 	//solution:begin
 	switch v % 3 {
 	case Rock:
@@ -27,8 +28,9 @@ func (v Value) String() string {
 
 // Beats gibt an, ob der Wert v den Wert w schlägt.
 func (v Value) Beats(w Value) bool {
-	//hint: Verwenden Sie einen if-else- oder switch-Block um zu prüfen, ob der Wert v den Wert w schlägt.
-	//      Alternativ können Sie auch die Werte in Integer umwandeln und rechnerisch prüfen.
+	// HINWEIS:
+	// Verwenden Sie einen if-else- oder switch-Block um zu prüfen, ob der Wert v den Wert w schlägt.
+	// Alternativ können Sie auch die Werte in Integer umwandeln und rechnerisch prüfen.
 	// solution:begin
 	vi := int(v)
 	wi := int(w)

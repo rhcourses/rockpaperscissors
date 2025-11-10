@@ -17,7 +17,8 @@ func NewHuman(n string) *Human {
 
 // GetName liefert den Namen des Spielers als String.
 func (p Human) GetName() string {
-	// hint: Greifen Sie mit p.Name auf den Namen des Spielers zu.
+	// HINWEIS:
+	// Greifen Sie mit p.Name auf den Namen des Spielers zu.
 	// solution:begin
 	return p.Name
 	// solution:end
@@ -25,7 +26,8 @@ func (p Human) GetName() string {
 
 // GetScore liefert den Punktestand des Spielers.
 func (p Human) GetScore() int {
-	// hint: Greifen Sie mit p.Score auf den Punktestand des Spielers zu.
+	// HINWEIS:
+	// Greifen Sie mit p.Score auf den Punktestand des Spielers zu.
 	// solution:begin
 	return p.Score
 	// solution:end
@@ -33,8 +35,9 @@ func (p Human) GetScore() int {
 
 // IncrementScore erhöht den Punktestand des Spielers um eins.
 func (p *Human) IncrementScore() {
-	// hint: Greifen Sie mit p.Score auf den Punktestand des Spielers zu.
-	//       Sie können p.Score wie eine reguläre Variable verwenden.
+	// HINWEIS:
+	// Greifen Sie mit p.Score auf den Punktestand des Spielers zu.
+	// Sie können p.Score wie eine reguläre Variable verwenden.
 	// solution:begin
 	p.Score++
 	// solution:end
@@ -42,10 +45,11 @@ func (p *Human) IncrementScore() {
 
 // GetMove liefert einen Zug des Spielers.
 func (p Human) GetMove() values.Value {
-	// hint: Fordern Sie den Spieler mit fmt.Printf() auf, einen Zug zu wählen.
-	//       Geben Sie dem Spieler die Optionen "Stein", "Papier" und "Schere".
-	//       Die Optionen können z.B. mit Zahlen 1, 2 und 3 verknüpft werden.
-	//       Verwenden Sie fmt.Scanln() um die Eingabe des Spielers zu lesen.
+	// HINWEIS:
+	// Fordern Sie den Spieler mit fmt.Printf() auf, einen Zug zu wählen.
+	// Geben Sie dem Spieler die Optionen "Stein", "Papier" und "Schere".
+	// Die Optionen können z.B. mit Zahlen 1, 2 und 3 verknüpft werden.
+	// Verwenden Sie fmt.Scanln() um die Eingabe des Spielers zu lesen.
 	// solution:begin
 	fmt.Printf("%s, was wählst du?\n", p.GetName())
 	fmt.Println("  1: Stein")
